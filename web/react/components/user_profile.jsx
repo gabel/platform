@@ -54,7 +54,7 @@ export default class UserProfile extends React.Component {
         }
     }
     render() {
-        var name = this.state.profile.username;
+        var name = Utils.displayUsername(this.state.profile.username);
         if (this.props.overwriteName) {
             name = this.props.overwriteName;
         }
